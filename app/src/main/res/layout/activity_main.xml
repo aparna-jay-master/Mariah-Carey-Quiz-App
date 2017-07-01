@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.mariahcareyquiz.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/banner" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Question 1.-->
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/mcbutterfly" />
+
+            <TextView
+                style="@style/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What's the name of the album shown above?" />
+
+            <EditText
+                android:id="@+id/question_text_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Album"
+                android:inputType="textCapWords" />
+
+            <!--Question 2.-->
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 2" />
+
+            <TextView
+                style="@style/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What's the name of the song written in collaboration with 98 Degrees?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shake it Off" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Always be My Baby" />
+
+                <RadioButton
+                    android:id="@+id/question_2_answer"
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thank God I Found You" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All I want for Christmas is You" />
+            </RadioGroup>
+
+
+            <!--Question 3.-->
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 3" />
+
+            <TextView
+                style="@style/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick the songs Mariah has performed at the Grammys." />
+
+            <CheckBox
+                android:id="@+id/question_3_vision"
+                style="@style/radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vision of Love" />
+
+            <CheckBox
+                android:id="@+id/question_3_belong_together"
+                style="@style/radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We Belong Together" />
+
+            <CheckBox
+                android:id="@+id/question_3_sweet_day"
+                style="@style/radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="One Sweet Day" />
+
+            <CheckBox
+                android:id="@+id/question_3_fly_bird"
+                style="@style/radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fly Like a Bird" />
+
+            <!--Question 4.-->
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/hero" />
+
+            <TextView
+                style="@style/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="And then a _____ comes along, with the strength to carry on" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="butterfly" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="guy" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="horse" />
+
+                <RadioButton
+                    android:id="@+id/question_4_answer"
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="hero" />
+            </RadioGroup>
+
+            <!--Question 5.-->
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 5" />
+
+            <TextView
+                style="@style/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What's the name of Mariah's first single?" />
+
+            <EditText
+                android:id="@+id/question_text_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Single"
+                android:inputType="textCapWords" />
+
+            <!--Question 6.-->
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 6" />
+
+            <TextView
+                style="@style/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which song's music video is insprired by a James Bond movie?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/question_6_answer"
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Honey" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hero" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="#Beautiful" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Anytime You Need a Friend" />
+            </RadioGroup>
+
+            <!--Question 7.-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bethere" />
+
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 7" />
+
+            <TextView
+                style="@style/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name the duet that was a cover of a Luther Vandross song" />
+
+            <EditText
+                android:id="@+id/question_text_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Name of Duet"
+                android:inputType="textCapWords" />
+
+            <Button
+                android:id="@+id/end_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showScore"
+                android:text="Check Score" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
