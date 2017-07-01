@@ -8,17 +8,16 @@
     tools:context="com.example.android.mariahcareyquiz.MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:adjustViewBounds="true"
+        android:scaleType="fitXY"
         android:src="@drawable/banner" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,6 +49,8 @@
                 android:id="@+id/question_text_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:hint="Name of Album"
                 android:inputType="textCapWords" />
 
@@ -208,6 +209,8 @@
                 android:id="@+id/question_text_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:hint="Name of Single"
                 android:inputType="textCapWords" />
 
@@ -281,6 +284,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:hint="Name of Duet"
                 android:inputType="textCapWords" />
 
@@ -288,6 +293,8 @@
                 android:id="@+id/end_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:onClick="showScore"
                 android:text="Check Score" />
         </LinearLayout>
